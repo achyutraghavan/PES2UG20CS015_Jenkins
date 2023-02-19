@@ -10,7 +10,7 @@ stages{
 
   stage('Test') {
     steps{
-       sh './working'
+       sh './not-working'
     }
   }
 
