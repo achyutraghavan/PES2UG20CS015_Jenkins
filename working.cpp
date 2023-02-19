@@ -1,12 +1,14 @@
 #include <iostream>
+#include <fstream>
+using namespace std;
 
 int main() {
+  // Create and open a text file
+  ofstream MyFile("filename.txt");
 
-  int sum;
+  // Write to the file
+  MyFile << "Files can be tricky, but it is fun enough!";
 
-  sum = 1 + 2;
-  
-  cout << "1 + 2 = " << sum;     
-
-  return 0;
+  // Close the file
+  MyFile.close();
 }
